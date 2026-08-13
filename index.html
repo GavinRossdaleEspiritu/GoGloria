@@ -1,0 +1,60 @@
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>GoGloria — Yacht Charter Brokerage</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="nav">
+    <div class="nav-inner">
+      <button class="brand" data-tab="home"><span class="anchor">⚓</span><span>GoGloria</span></button>
+      <nav id="desktopNav">
+        <button data-tab="home">Home</button>
+        <button data-tab="fleet">Fleet</button>
+        <button data-tab="how">How It Works</button>
+        <button data-tab="plan">Business Plan</button>
+        <button data-tab="about">About</button>
+        <button class="nav-cta" data-tab="inquire">Charter Request</button>
+      </nav>
+      <button id="menuBtn" class="menu-btn">☰</button>
+    </div>
+    <div id="mobileNav" class="mobile-nav">
+      <button data-tab="home">Home</button><button data-tab="fleet">Fleet</button>
+      <button data-tab="how">How It Works</button><button data-tab="plan">Business Plan</button>
+      <button data-tab="about">About</button><button data-tab="inquire">Charter Request</button>
+    </div>
+  </header>
+
+  <main id="app"></main>
+
+  <footer class="footer">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-brand">⚓ <span>GoGloria</span></div>
+        <p>Where every guest feels welcome. UAE yacht charter brokerage, 110 partner vessels.</p>
+      </div>
+      <div>
+        <div class="footer-title">EXPLORE</div>
+        <button data-tab="home">Home</button><button data-tab="fleet">Fleet</button>
+        <button data-tab="plan">Business Plan</button><button data-tab="inquire">Charter Request</button>
+      </div>
+      <div>
+        <div class="footer-title">CONTACT</div>
+        <p>☎ +971 4 340 8933</p><p>✉ hello@gogloria.ae</p>
+      </div>
+      <div>
+        <div class="footer-title">NEWSLETTER</div>
+        <form id="newsletterForm" class="newsletter">
+          <input id="newsletterEmail" type="email" placeholder="you@email.com" required>
+          <button type="submit">➤</button>
+        </form>
+        <p id="newsletterDone" class="success hidden">You're subscribed — thank you.</p>
+      </div>
+    </div>
+    <div class="copyright">© 2026 GoGloria Yacht Charter Brokerage.</div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
