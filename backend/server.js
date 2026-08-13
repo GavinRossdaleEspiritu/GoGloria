@@ -163,8 +163,12 @@ app.post("/api/charter-requests", async (req, res) => {
   }
 });
 
-app.listen(PORT, () => {
-  console.log(`GoGloria Backend running at http://localhost:${PORT}`);
-  console.log(`Supabase: connected through server-side credentials`);
-  console.log(`Excel: ${excelPath}`);
-});
+if (require.main === module) {
+  app.listen(PORT, () => {
+    console.log(`GoGloria Backend running at http://localhost:${PORT}`);
+    console.log(`Supabase: connected through server-side credentials`);
+    console.log(`Excel: ${excelPath}`);
+  });
+}
+
+module.exports = app;
