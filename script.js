@@ -5,7 +5,7 @@ let presetYacht = "";
 // GoGloria frontend configuration.
 // The browser talks only to the backend API.
 // Supabase secret credentials NEVER belong in this file.
-const API_BASE_URL = window.GOGLORIA_API_URL || "http://localhost:3000/api";
+const API_BASE_URL = "https://go-gloria-backend.vercel.app/api";
 
 const yachts = ["Azure Serenity", "Golden Hour", "Pearl Voyager", "Coral Drift", "Seabreeze II", "North Star", "Amber Tide", "Sundeck Classic"];
 
