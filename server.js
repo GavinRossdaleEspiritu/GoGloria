@@ -170,3 +170,4 @@ if (require.main === module) {
     console.log(`Excel: ${excelPath}`);
   });
 }
+module.exports = app;
